@@ -1,0 +1,94 @@
+.main-wrapper{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+@media (max-width : 500px) {
+    .main-wrapper{
+        width: 100vw;
+        flex-direction: column;
+    }
+    .description{
+        width: 85%;
+    }
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../css/Raleway-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: 'Raleway';
+}
+
+.big-title{
+    width: 120px;
+    height: 35px;
+    margin-bottom: 50px;
+}
+
+.big-title img{
+    width: 100%;
+    height: fit-content;
+
+}
+
+.photo{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px #f2f2f2;
+}
+.photo img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.description{
+    width: 42%;
+    margin-left: 20px;
+}
+
+.description .nom{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+}
+.description .prix{
+    font-size: 1.4em;
+}
+
+.description .about{
+    width: 85%;
+    text-align: justify;
+}
+
+.main-wrapper p.prix{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.main-wrapper .reserver{
+    padding: 15px;
+    border: 1px solid transparent;
+    background: linear-gradient(rgb(191, 81, 255),white);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.main-wrapper .reserver:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.stars svg{
+    height: 20px;
+}

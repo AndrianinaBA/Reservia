@@ -1,0 +1,87 @@
+.hebergement-populaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width : 600px) {
+    .hebergement-populaire{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hebergement{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
+        padding:15px;
+        background-color: #1291b8;
+    }
+}
+
+.hebergement{
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+}
+.hebergement #hebergement-goto{
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 20px;
+    flex-basis: 1;
+}
+.hebergement .container{
+    width: 250px;
+    height: 230px;
+    position: relative;
+    margin-bottom: 30px;
+    transition: linear .4s;
+
+}
+.hebergement .container img{
+    width: 100%;
+    box-shadow: 0 0 6px 6px #b4b4b4;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 15px;
+    position: relative;
+    margin: 0;
+}
+
+
+.hebergement .notes{
+    position: absolute;
+    width: 98%;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 0 0 15px 15px;
+    bottom: -19px;
+    padding-left: 5px;
+}
+.hebergement .notes .nom{
+    font-weight: bold;
+    text-align: center;
+}
+
+.hebergement .more{
+    align-self: flex-end;
+    text-align: center;
+    width: 100%;
+}
+i{
+    color: #0065FC;
+}
+.hebergement .container:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
